@@ -1,0 +1,26 @@
+{
+  "name": "Portfolio",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "conniechu929 <conniechu929@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "angular-ui-router": "1.0.0-beta.3",
+    "vidage": "^0.3.5",
+    "jquery": "^3.1.1",
+    "animate.css": "^3.5.2",
+    "letteringjs": "^0.7.0"
+  }
+}

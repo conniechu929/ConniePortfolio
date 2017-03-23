@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+}
+
+.first {
+  background-color: black;
+}
+
+.quote {
+  color: white;
+  font-size: 1.3vw;
+  font-family:"Poiret One";
+}
+
+#title {
+  margin-top: 15%;
+  margin-left: 2%;
+  text-align: center;
+  z-index: 20;
+}
+
+.welcome {
+  margin-left: -5%;
+  text-align: center;
+  color: white;
+  font-size: 8vw;
+  text-shadow: 5px 5px 5px rgba(255,255,255,0.4), -4px -4px 4px rgba(0,0,0,0.4);
+  font-family: 'Krona One';
+}
+
+#enterbtn {
+  margin-left: -5%;
+  background-color: transparent;
+  color: white;
+}
+
+.navbar navbar-default navbar-fixed-top{
+  position: relative;
+}
+
+nav {
+  font-family: 'Alegreya Sans SC';
+  background-color: black !important;
+  color: white !important;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+.links {
+  cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.btn3d {
+    transition: all .08s linear;
+    position: relative;
+    outline: medium none;
+    -moz-outline-style: none;
+    border: 2px;
+    margin-top: 15px;
+    margin-left: 15%;
+    top: 0;
+    position: relative;
+    border: 0 !important;
+    background-color: transparent;
+    color: white;
+    font-family: "Karla";
+}
+
+.btn3d:focus {
+    outline: medium none;
+    -moz-outline-style: none;
+}
+.btn3d:active {
+    top: 9px;
+}
+
+.btn3d.btn-default {
+    box-shadow: 0 0 0 1px black inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 black, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn3d:active.btn-default {
+    box-shadow: none;
+}
+
+#welcomePage {
+  background-image: url("/images/sfpic.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 650px;
+  display: block;
+  position: relative;
+}
+
+#greeting {
+  margin-top: 10%;
+  font-family: "Sofia";
+  font-size: 6vw;
+  color: white;
+}
+
+#intro {
+  font-size: 3vw;
+  font-family: "Allura";
+  color: black;
+}
+
+.sectionTitle {
+  font-family: "Architects Daughter";
+  margin-left: 4px;
+  color: grey;
+}
+
+#about {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2px;
+  display: block;
+  text-align: left;
+  border: 4px solid grey;
+  position: relative;
+  height: 690px;
+  width: auto\9;
+  color: white
+}
+
+#myCarousel {
+  width: 90% !important;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+
+.carousel {
+  /*margin-bottom: 60px;*/
+}
+
+.carousel-caption {
+  z-index: 3;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+
+.carousel .item {
+  /*max-height: 600px;*/
+  height: auto;
+  background-color:#555;
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  height: auto !important;
+  width: 80% !important;
+  border: 11px groove white;
+}
+
+.overlay {
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  left:3;
+  width:100%;
+  text-align:left;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+.carousel-inner {
+  margin-top: 15%;
+  margin-left: 14%;
+  min-height: 470px;
+  height: auto !important;
+  width: 50% !important;
+}
+
+.aboutMyself {
+  font-family: "Happy Monkey";
+  font-size: 1.25vw;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  width: 37%;
+  top: -50px;
+  margin-left: 61%;
+  margin-top: -100%;
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url("/images/border.jpeg") 60 stretch;
+  -o-border-image: url("/images/border.jpeg") 60 stretch;
+  border-image: url("/images/border.jpeg") 60 stretch;
+}
+
+.resume {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1vw;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: grey;
+  border: 2px solid darkgray;
+  border-radius: 2px;
+  box-shadow: 0 5px #999;
+}
+
+.resume:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}
+
+.resume:active {
+  background-color: black;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+#projects {
+  height: auto;
+  background: linear-gradient(to bottom, #ffffff 0%, #808080 150%);
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+hr.divider {
+  margin-top: 3%;
+  width: 80%;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px 0 0 0;
+  border-radius: 20px;
+}
+hr.divider:before {
+  width: -80%;
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -32px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 2px 0;
+  border-radius: 20px;
+}
+
+.projectSection {
+  font-family: "Chelsea Market";
+  margin-bottom: 3%;
+}
+
+
+#FoodFind {
+  cursor: pointer;
+}
+
+#bills {
+  cursor: pointer;
+}
+
+#park {
+  cursor: pointer;
+}
+
+#food {
+  display: inline-block;
+  width: 65%;
+  position: relative;
+  top: -30px;
+  margin-left: 1%;
+}
+
+
+#bill {
+  display: inline-block;
+  width: 65%;
+  position: relative;
+  top: -30px;
+  margin-left: 1%;
+}
+
+#parkit {
+  display: inline-block;
+  width: 65%;
+  position: relative;
+  top: -30px;
+  margin-left: 1%;
+}
+
+.video {
+  display: inline-block;
+}
+
+#contact {
+  height: auto;
+  background-color: white;
+}
+
+table td{
+  font-size: 1vw;
+  text-align: center;
+  width: 3%;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.color {
+  color: #b3b3b3;
+}

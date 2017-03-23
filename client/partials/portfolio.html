@@ -1,0 +1,158 @@
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" ng-click="welcome()">Connie Chu</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="links" ng-click="AboutMe()">ABOUT ME</a></li>
+          <li><a class="links" ng-click="myProjects()">PROJECTS</a></li>
+          <li><a class="links" ng-click="myContact()">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="welcomePage" class="container-fluid">
+    <h1 id="greeting" class="title">Connie Chu</h1>
+    <p id="intro" class="title"><b>Hi, welcome to my page! I'm a software engineer / full stack developer that enjoys creating websites.</b></p>
+  </div>
+
+  <div id="about" class="container-fluid">
+    <div class="overlay">
+      <h1 class="sectionTitle" style="margin-left:15px;"><b>Some Basics About Me:</b></h1>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/london.jpg" alt="London">
+          <div class="container">
+            <div class="carousel-caption">
+              </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/coding.jpeg" alt="Coding">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/Italy.jpg" alt="Italy">
+          <div class="container">
+            <div class="carousel-caption">
+              </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/Muaythai.jpeg" alt="MuayThai">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/travel.jpeg" alt="Travel">
+          <div class="container">
+            <div class="carousel-caption">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutMyself">
+      <p class="summary">I have always been a bit curious when it comes to trying to figure out how things are created.
+      I started out learning about things in it's smallest form, an atom. Before I started on a path on becoming a software
+      developer, I worked in chemical engineering research after graduating from the University of California-Davis. I have been actively working
+      in creating, collaborating and deploying various web applications since 2016.</p>
+
+      <p class="summary">The three main stacks that I work with is Python on Django, MEAN, and Ruby on Rails. Some front-end web development and design
+      that I work with include AngularJS, JQuery, AJAX, Bootstrap, HTML, and CSS. On the other backend, I have experience working with both relational and
+      nonrelational databases such as MySQL, SQLite, PostGresSQL, and MongoDB.</p>
+
+      <p class="summary">When I am not programming and building web pages, I enjoy spending time traveling around the world and experiencing
+      the different cultures the world has to offer, spending time with family and friends, and practicing muay thai that is both a mental and
+      physical stress release. </p>
+
+      <a class='resume' href="/files/ConnieChuResume.pdf" target="pdf-frame">View my resume for more info</a>
+    </div>
+  </div>
+
+  <div id="projects" class="container-fluid">
+    <h1 class="sectionTitle"><b>Some Projects I worked on...</b></h1>
+    <div class="projectSection">
+      <h3 id="FoodFind">FoodFind - Making to discover local restaurants easy and more user interactive</h3>
+      <video class="video" controls autoplay loop="loop" height="200" width="250" >
+        <source src="/videos/food.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+      </video>
+      <p id='food' class="foodSummary" style="display:none;">This web application was a creation the started from a love of food. The application aims to connect users
+        with local restaurants more fun. We all know part of the reason people love using tinder is partially because
+        of the noncommitment that goes into it and the way users can easily swipe left with a glimpse of a picture. With
+        the use of Ruby on Rails, and some help from some very useful APIs from Google and Yelp, we have created a site that
+        is dedicated to locating restaurants based on the users location.</p>
+      <p class="foodSummary" style="display:none;">Take a look at the repo <a target="_blank" href="https://github.com/conniechu929/rails_project">here</a> or try out the <a target="_blank" href="http://52.40.131.196/">site</a>.</p>
+    </div>
+    <div class="projectSection">
+      <h3 id="bills">BillPay - Helping users to track, organize and pay bills in one place</h3>
+      <video class="video" controls autoplay loop="loop" height="200" width="250" >
+        <source src="/videos/bills.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+      </video>
+      <p id='bill' class="billsummary" style="display:none;">Keeping organized isn't easy, and with every day things that tend to build upon each other, it's easy to let things
+        slip your mind. Written with python and utilizing Django's framework, this web application is used to help try to keep bills
+        organized and help to make life a little bit easier. It will keep track on payments and when it will due and give you a notification. It also helps to
+        keep all the websites people need to go to in one easy place.</p>
+        <p class="billsummary" style="display:none;">Check out the project <a target="_blank" href="https://github.com/conniechu929/BillPay">here</a></p>
+    </div>
+    <div class="projectSection">
+      <h3 id="park">ParkIt - An ongoing project to help users determine city parking limits</h3>
+      <video class="video" controls autoplay loop="loop" height="200" width="250" >
+        <source src="/videos/parking.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+      </video>
+      <p id='parkit' class="parksummary" style="display:none;">Everyone knows that looking for parking in San Francisco is almost an impossible feat. When one does find one, there's the endless
+        restrictions that come with public steet parking. This website aims to help people by showing them the parking limits base on the street
+        they are looking at.</p>
+        <p class="parksummary" style="display:none;">You can see it <a target="_blank" href="https://github.com/conniechu929/ParkIt">here</a></p>
+    </div>
+  </div>
+  <div id="contact" class="container-fluid">
+    <hr class="divider">
+    <h1 class="sectionTitle"><b>Contact Me:</b></h1>
+    <div id="contactInfo">
+      <table>
+        <tr>
+          <td><span class="glyphicon glyphicon-map-marker logo-small"></span> San Francisco, CA </p></td>
+          <td>|</td>
+          <td><p><span class="glyphicon glyphicon-phone logo-small"></span> (415) 484-2137 </p></td>
+          <td>|</td>
+          <td><p><span class="glyphicon glyphicon-envelope logo-small"></span> <a href="mailto:conniechu929@gmail.com" target="_top">conniechu929@gmail.com</a> </p></td>
+          <td>|</td>
+          <td><p> <a target="_blank" href="https://www.linkedin.com/in/connie-chu/"><img src="/images/linkedinlogo.png" alt=""></a> </p></td>
+          <td>|</td>
+          <td><p> <a target="_blank" href="https://github.com/conniechu929"> <img src="/images/github.png" alt="" height='20'></a></p></td>
+        </tr>
+      </table>
+    </div>
+    <br>
+  </div>
+</body>

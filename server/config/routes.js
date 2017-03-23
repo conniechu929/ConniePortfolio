@@ -1,7 +1,7 @@
-console.log('routes');
-
-// var portfolio = require('../controllers/portfolio.js');
+// console.log('routes');
 //
-module.exports = function(app){
-//   app.get('/', portfolio.index);
-}
+// // var portfolio = require('../controllers/portfolio.js');
+// //
+// module.exports = function(app){
+// //   app.get('/', portfolio.index);
+// }

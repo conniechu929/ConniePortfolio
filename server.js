@@ -1,5 +1,4 @@
-var mongoose = require( 'mongoose' ),
-    express  = require( 'express' ),
+var express  = require( 'express' ),
     bp       = require('body-parser'),
     path     = require( 'path' ),
     root     = __dirname,
@@ -12,9 +11,6 @@ app.use(bp.json());
 app.set('view engine', 'html');
 
 
-require('./server/config/mongoose.js')
-
-require('./server/config/routes.js')(app);
 
 
 app.listen(8000, function() {

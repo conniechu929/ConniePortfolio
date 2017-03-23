@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  console.log("IN STYLE.JS")
+
   $(window).on( "load", function() {
     $(".welcome").textillate({
             initialDelay: 0,
@@ -33,7 +35,7 @@ $(document).ready(function() {
                  delay: 60,
           }
         });
-  })
+      })
 //     $(".welcome").textillate({
 //         initialDelay: 0,
 //         autoStart: true,

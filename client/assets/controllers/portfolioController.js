@@ -1,4 +1,4 @@
-console.log("Controller is here");
+
 app.controller('portfolioController', ['$scope','portfolioFactory', '$location', '$anchorScroll', function($scope, portfolioFactory, $location, $anchorScroll) {
 
     $("nav").hover(function() {

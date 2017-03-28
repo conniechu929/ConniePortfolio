@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log("IN STYLE.JS")
 
   $(window).on( "load", function() {
     $(".welcome").textillate({

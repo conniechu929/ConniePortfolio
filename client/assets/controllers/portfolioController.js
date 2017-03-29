@@ -45,7 +45,7 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
     });
     var playVid;
     function startVideo() {
-      playVid = document.getElementById('vid');
+      playVid = document.getElementById('vid1');
       playVid.play();
     }
 

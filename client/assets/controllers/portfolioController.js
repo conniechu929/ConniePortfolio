@@ -44,6 +44,10 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
       }
     });
 
+    function startVideo() {
+      document.getElementById('vid').play();
+    }
+
   $scope.welcome = function() {
     $location.hash('welcomePage');
     $anchorScroll();

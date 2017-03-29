@@ -43,9 +43,10 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
         $(".title").fadeIn("slow")
       }
     });
-
+    var playVid;
     function startVideo() {
-      document.getElementById('vid').play();
+      playVid = document.getElementById('vid');
+      playVid.play();
     }
 
   $scope.welcome = function() {

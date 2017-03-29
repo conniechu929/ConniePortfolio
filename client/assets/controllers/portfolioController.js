@@ -46,7 +46,10 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
     var playVid;
     function startVideo() {
       playVid = document.getElementById('vid1');
-      playVid.play();
+      // playVid.play();
+      document.addEventListener('touchstart', function(event) {
+        playVid.play();
+      }, false);
     }
 
   $scope.welcome = function() {

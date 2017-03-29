@@ -5,6 +5,10 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
       $("nav").removeClass('opacity');
     });
 
+    $('.carousel').carousel({
+      interval: 3000
+    })
+
     $("#FoodFind").click(function() {
       $(".foodSummary").toggle("slow");
     });
@@ -62,7 +66,7 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
     var video = document.querySelector('video');
     // enableInlineVideo(video);
     if(video){
-      console.log('LOLO');
+      console.log('LOLO2');
       video.addEventListener('touchstart', function () {
         video.play();
       });

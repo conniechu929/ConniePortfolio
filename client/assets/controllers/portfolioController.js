@@ -43,21 +43,32 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
         $(".title").fadeIn("slow")
       }
     });
-    var playVid;
-    function startVideo() {
-      playVid = document.getElementById('vid1');
-      // playVid.play();
-      document.addEventListener('touchstart', function(event) {
-        playVid.play();
-      }, false);
+    // var playVid;
+    // function startVideo() {
+    //   playVid = document.getElementById('vid1');
+    //   // playVid.play();
+    //   document.addEventListener('touchstart', function(event) {
+    //     playVid.play();
+    //   }, false);
+    // }
+
+    // $('video').each(function () {
+    //   enableInlineVideo(this);
+    // });
+    // $('video').on('touchstart', function(){
+    //   $(this).play();
+    // })
+
+    var video = document.querySelector('video');
+    // enableInlineVideo(video);
+    if(video){
+      console.log('LOLO');
+      video.addEventListener('touchstart', function () {
+        video.play();
+      });
     }
 
-    $('video').each(function () {
-      enableInlineVideo(this);
-    });
-    $('video').on('touchstart', function(){
-      $(this).play();
-    })
+
 
   $scope.welcome = function() {
     $location.hash('welcomePage');

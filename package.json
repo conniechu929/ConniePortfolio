@@ -13,6 +13,7 @@
   "dependencies": {
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
+    "iphone-inline-video": "^2.0.2",
     "jquery": "^3.1.1"
   }
 }

@@ -52,6 +52,13 @@ app.controller('portfolioController', ['$scope','portfolioFactory', '$location',
       }, false);
     }
 
+    $('video').each(function () {
+      enableInlineVideo(this);
+    });
+    $('video').on('touchstart', function(){
+      $(this).play();
+    })
+
   $scope.welcome = function() {
     $location.hash('welcomePage');
     $anchorScroll();
